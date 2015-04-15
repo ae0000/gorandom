@@ -3,6 +3,7 @@ package gorandom
 import (
 	"crypto/rand"
 	"math/big"
+	"strings"
 )
 
 const (
@@ -88,4 +89,10 @@ func FullNames(n int) []string {
 	}
 
 	return s
+}
+
+func Split(s string) (string, string) {
+	x := strings.Split(s, " ")
+
+	return x[0], x[1]
 }
