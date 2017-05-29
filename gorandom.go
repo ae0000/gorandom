@@ -39,6 +39,10 @@ func Numeric(n int) string {
 	return Random(n, numeric)
 }
 
+func Email() string {
+	return fmt.Sprintf("%s@%s.com", Alpha(8), Alpha(8))
+}
+
 func Sex() string {
 	return Random(1, sex)
 }
