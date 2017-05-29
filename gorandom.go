@@ -1,6 +1,7 @@
 package gorandom
 
 import (
+	"fmt"
 	"crypto/rand"
 	"math/big"
 	"strings"
